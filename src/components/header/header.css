@@ -1,0 +1,81 @@
+#threeLineIcon {
+  display: none;
+}
+
+.navigation {
+  height: 70px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#navigation-list {
+  width: 250px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-right: 40px;
+}
+
+.navigation li {
+  list-style: none;
+  font-size: 15px;
+  color: antiquewhite;
+}
+
+.navigation li:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 440px) {
+
+  .navigation li {
+      color: #5af88a;
+      display: none;
+  }
+
+  #threeLineIcon {
+      color: #5af88a;
+      border-bottom: none;
+      text-align: right;
+      display: block;
+      margin: 0px 20px 0px 0px;
+      font-size: 30px;
+  }
+
+  #threeLineIcon:hover {
+      cursor: pointer;
+  }
+
+  #threeLineIcon a {
+      color: #5af88a;
+      text-decoration: none;
+  }
+
+  .navigation {
+      height: 50px;
+      display: flex;
+      align-items: center;
+  }
+
+  #navigation-list {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+  }
+
+  .navigation li {
+      list-style: none;
+      font-size: 15px;
+      background-image: linear-gradient(to right, var(--corTexto1), var(--corTexto2));
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      margin: 0 25px;
+  }
+
+  .navigation li:hover {
+      cursor: pointer;
+  }
+}

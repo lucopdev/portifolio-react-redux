@@ -1,0 +1,48 @@
+:root {
+  --logo-width: 50px;
+  --p-height: 100px;
+}
+
+.habilities-main-section {
+  height: fit-content;
+}
+
+.habilities-main-text-div {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: calc(var(--p-height) * 10 + 30px);
+}
+
+.habilities-main-text-div p {
+  text-align: justify;
+  height: 100px;
+}
+
+.all-logo-div {
+  align-items: center;
+  display: flex;
+  margin-bottom: 15px;
+  justify-content: space-between;
+  width: calc(var(--logo-width) * 12 + 30px);
+}
+
+.unix-logo,
+.git-logo,
+.vs-logo,
+.html-logo,
+.css-logo,
+.js-logo,
+.jest-logo,
+.react-logo,
+.redux-logo,
+.slack-logo {
+  width: 50px;
+}
+
+.github-logo {
+  background-color: white;
+  border-radius: 100%;
+  width: 50px;
+}
