@@ -1,3 +1,9 @@
-.text {
+.about-main-text-div p {
+  align-items: center;
+  color: antiquewhite;
+  display: flex;
+  font-size: 15px;
+  height: 100px;
+  justify-content: space-between;
   text-align: justify;
 }

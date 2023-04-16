@@ -33,9 +33,14 @@ class Home extends Component {
           </div>
         </section>
 
-        <section id="text-container">
-          <About />
-          <Habilities />
+        <section id="contents-container">
+
+          <div className="contents">
+            <About />
+          </div>
+          <div className="contents">
+            <Habilities />
+          </div>
         </section>
 
         <Footer />

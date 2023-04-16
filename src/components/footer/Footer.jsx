@@ -4,7 +4,7 @@ import './footer.css';
 class Footer extends Component {
   render() {
     return (
-      <footer>V. 2.16</footer>
+      <footer>V. 3.10</footer>
     );
   }
 }

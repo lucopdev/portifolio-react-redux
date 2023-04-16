@@ -16,14 +16,19 @@
 }
 
 .habilities-main-text-div p {
-  text-align: justify;
+  align-items: center;
+  color: antiquewhite;
+  display: flex;
+  font-size: 15px;
   height: 100px;
+  justify-content: space-between;
+  text-align: justify;
 }
 
 .all-logo-div {
   align-items: center;
   display: flex;
-  margin-bottom: 15px;
+  margin: 15px;
   justify-content: space-between;
   width: calc(var(--logo-width) * 12 + 30px);
 }

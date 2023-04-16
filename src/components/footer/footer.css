@@ -1,7 +1,5 @@
 footer {
-  margin-top: 50px;
   text-align: center;
-  font-size: 118px;
-  color: rgb(60, 255, 0);
-  background-color: blue;
+  font-size: 10px;
+  color: rgb(60, 255, 0);height: 100px;
 }
