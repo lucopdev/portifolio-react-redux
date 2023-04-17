@@ -7,3 +7,45 @@
   justify-content: space-between;
   text-align: justify;
 }
+
+@media (max-width: 729px) {
+
+  .about-main-text-div {
+    height: calc(var(--p-height) * 4 + 30px);
+  }
+
+  .about-main-text-div p {
+    font-size: 2.5vw;
+    height: 130px;
+  }
+}
+
+@media (max-width: 680px) {
+  .about-main-text-div {
+    height: calc(var(--p-height) * 4 + 30px);
+  }
+  .about-main-text-div p {
+    font-size: 2.5vw;
+    height: 150px;
+  }
+}
+
+@media (max-width: 550px) {
+  .about-main-text-div {
+    height: calc(var(--p-height) * 4 + 30px);
+  }
+  .about-main-text-div p {
+    font-size: 2.5vw;
+    height: 120px;
+  }
+
+  @media (max-width: 500px) {
+    .about-main-text-div {
+      height: calc(var(--p-height) * 3 + 30px);
+    }
+    .about-main-text-div p {
+      font-size: 2.5vw;
+      height: 110px;
+    }
+  }
+}

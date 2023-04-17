@@ -20,17 +20,15 @@
   color: antiquewhite;
   display: flex;
   font-size: 15px;
-  height: 100px;
-  justify-content: space-between;
+  justify-content: space-evenly;
   text-align: justify;
 }
 
 .all-logo-div {
   align-items: center;
   display: flex;
-  margin: 15px;
-  justify-content: space-between;
-  width: calc(var(--logo-width) * 12 + 30px);
+  justify-content: center;
+  margin: 15px 0 15px 0;
 }
 
 .unix-logo,
@@ -44,6 +42,7 @@
 .redux-logo,
 .slack-logo {
   width: 50px;
+  margin: 5px;
 }
 
 .github-logo {
@@ -51,3 +50,34 @@
   border-radius: 100%;
   width: 50px;
 }
+
+  @media (max-width: 729px) {
+    .all-logo-div {
+      align-items: center;
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      margin: 15px 0 15px 0;
+    }
+
+    .habilities-main-text-div {
+      height: calc(var(--p-height) * 15 + 30px);
+    }
+
+    .habilities-main-text-div p {
+      font-size: 2.5vw;
+      height: 100px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .habilities-main-text-div {
+      height: calc(var(--p-height) * 12 + 30px);
+    }
+  }
+
+  @media (max-width: 500px) {
+    .habilities-main-text-div {
+      height: calc(var(--p-height) * 10 + 30px);
+    }
+  }

@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
+import imageList from '../../data/imageList';
 import './habilities.css';
+import ImageComponent from '../ImageComponent/ImageComponent';
 
 class Habilities extends Component {
   render() {
@@ -10,88 +12,15 @@ class Habilities extends Component {
         </span>
         <div className="habilities-main-text-div">
           <ul className="all-logo-div">
-            <li>
-
-              <img
-                className="slack-logo"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/slack/slack-original.svg"
-                alt="slack"
-              />
-
-            </li>
-            <li>
-              <img
-                className="unix-logo"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unix/unix-original.svg"
-                alt="unix-logo"
-              />
-
-            </li>
-            <li>
-              <img
-                className="git-logo"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg"
-                alt="git-logo"
-              />
-            </li>
-            <li>
-              <img
-                className="github-logo"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
-                alt="github-logo"
-              />
-            </li>
-            <li>
-              <img
-                className="vs-logo"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg"
-                alt="vs-logo"
-              />
-
-            </li>
-            <li>
-              <img
-                className="html-logo"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg"
-                alt="html-logo"
-              />
-            </li>
-            <li>
-              <img
-                className="css-logo"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
-                alt="css-logo"
-              />
-            </li>
-            <li>
-              <img
-                className="js-logo"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg"
-                alt="js-logo"
-              />
-            </li>
-            <li>
-              <img
-                className="jest-logo"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg"
-                alt="jest-logo"
-              />
-            </li>
-            <li>
-              <img
-                className="react-logo"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
-                alt="react-logo"
-              />
-            </li>
-            <li>
-              <img
-                className="redux-logo"
-                src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg"
-                alt="redux-logo"
-              />
-
-            </li>
+            {imageList.map(({ className, src, alt }, index) => (
+              <li key={ index }>
+                <ImageComponent
+                  className={ className }
+                  src={ src }
+                  alt={ alt }
+                />
+              </li>
+            ))}
           </ul>
           <p>
             Como desenvolvedor web, eu trabalhei com uma ampla variedade
