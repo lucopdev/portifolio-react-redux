@@ -10,6 +10,9 @@
     --corNavigation4: #41197f;
     --corNavigation5: #272727;
     background-color: black;
+
+    --logo-width: 50px;
+    --p-height: 120px;
 }
 
 * {

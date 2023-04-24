@@ -5,9 +5,11 @@ class About extends Component {
   render() {
     return (
       <section className="about-main-text-div">
-        <span>
-          Quem sou eu?
-        </span>
+        <div>
+          <span>
+            Quem sou eu?
+          </span>
+        </div>
         <p>
           Sou Lucas, atualmente moro em Pelotas-RS.
           Após anos trabalhando no setor comercial,

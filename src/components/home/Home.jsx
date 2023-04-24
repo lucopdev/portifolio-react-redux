@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import euzinho from '../../image/euzinho.jpg';
+import euzinho from '../../image/eu300.png';
 import './Home.css';
 import Header from '../header/Header';
 import About from '../about/About';

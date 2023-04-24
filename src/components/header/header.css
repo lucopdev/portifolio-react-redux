@@ -3,13 +3,13 @@
 }
 
 .navigation {
-  height: 70px;
+  height: 80px;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
 
-#navigation-list {
+.navigation ul {
   width: 250px;
   display: flex;
   flex-direction: row;
@@ -27,38 +27,14 @@
   cursor: pointer;
 }
 
-@media (max-width: 440px) {
-
-  .navigation li {
-      color: #5af88a;
-      display: none;
-  }
-
-  #threeLineIcon {
-      color: #5af88a;
-      border-bottom: none;
-      text-align: right;
-      display: block;
-      margin: 0px 20px 0px 0px;
-      font-size: 30px;
-  }
-
-  #threeLineIcon:hover {
-      cursor: pointer;
-  }
-
-  #threeLineIcon a {
-      color: #5af88a;
-      text-decoration: none;
-  }
-
+@media (max-width: 730px) {
   .navigation {
       height: 50px;
       display: flex;
       align-items: center;
   }
 
-  #navigation-list {
+  .navigation ul {
       width: 100%;
       display: flex;
       flex-direction: row;
@@ -66,6 +42,7 @@
   }
 
   .navigation li {
+      color: #5af88a;
       list-style: none;
       font-size: 15px;
       background-image: linear-gradient(to right, var(--corTexto1), var(--corTexto2));
@@ -77,5 +54,42 @@
 
   .navigation li:hover {
       cursor: pointer;
+  }
+}
+
+@media (max-width: 440px) {
+  #threeLineIcon {
+      color: #5af88a;
+      border-bottom: none;
+      text-align: right;
+      display: block;
+      margin: 65px 20px 0 0;
+      font-size: 35px;
+  }
+
+  #threeLineIcon:hover {
+    cursor: pointer;
+  }
+
+  #threeLineIcon a {
+    color: #5af88a;
+    text-decoration: none;
+  }
+
+  .navigation {
+    height: 20px;
+  }
+
+  .navigation ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    margin-right: 0px;
+    width: 100%;
+  }
+
+  .navigation li {
+      color: #5af88a;
+      display: none;
   }
 }

@@ -1,3 +1,11 @@
+.about-main-text-div {
+  height: calc(var(--p-height) * 4 + 30px);
+}
+
+.about-main-text-div div {
+  margin-bottom: 20px;
+}
+
 .about-main-text-div p {
   align-items: center;
   color: antiquewhite;
@@ -22,7 +30,7 @@
 
 @media (max-width: 680px) {
   .about-main-text-div {
-    height: calc(var(--p-height) * 4 + 30px);
+    height: calc(var(--p-height) * 5 + 30px);
   }
   .about-main-text-div p {
     font-size: 2.5vw;
@@ -34,6 +42,7 @@
   .about-main-text-div {
     height: calc(var(--p-height) * 4 + 30px);
   }
+
   .about-main-text-div p {
     font-size: 2.5vw;
     height: 120px;
