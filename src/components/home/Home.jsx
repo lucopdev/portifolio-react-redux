@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import euzinho from '../../image/eu300.png';
+import euzinho from '../../image/eulogo.webp';
 import './Home.css';
 import Header from '../header/Header';
 import About from '../about/About';
@@ -12,15 +12,12 @@ class Home extends Component {
       <div>
         <Header />
         <section id="profile">
-
-          <div id="container-img-div">
-            <div id="img-profile-div">
-              <img
-                id="imgProfile"
-                src={ euzinho }
-                alt="Foto de perfil Lucas Silveira da Rosa"
-              />
-            </div>
+          <div className="img-div">
+            <img
+              id="imgProfile"
+              src={ euzinho }
+              alt="Foto de perfil Lucas Silveira da Rosa"
+            />
           </div>
 
           <div id="name-profile-div">

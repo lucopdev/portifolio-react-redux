@@ -5,7 +5,7 @@
     flex-direction: row-reverse;
     justify-content: space-evenly;
     margin: 100px auto;
-    width: 90%;
+    width: 85%;
 }
 
 #name-profile-div {
@@ -17,32 +17,10 @@
     width: 45%;
 }
 
-#container-img-div {
-    background-color: blue;
-    border-radius: 100%;
-    width: 30%;
-}
-
-#img-profile-div {
-    align-items: center;
-    background: linear-gradient(170deg, rgba(255, 0, 0, 0.541), rgba(89, 0, 255, 0.616), rgb(255, 175, 84), rgba(255, 16, 156, 0.582), rgba(228, 120, 255, 0.548), rgb(185, 132, 245), rgb(220, 231, 243));
-    border-radius: 100%;
-    box-shadow:
-    0px 0px 8px 4px rgba(255, 0, 0, 0.404),
-    0px 15px 8px 8px rgb(255, 255, 255),
-    0px 0px 8px 11px rgba(68, 0, 255, 0.356);
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
 #imgProfile {
-    border: solid 2px rgba(255, 255, 255, 0.315);
-    border-radius: 100%;
     box-shadow: 0px 0px 1000px 20px #a200ff7a;
-    margin: 10px;
-    width: 95%;
-    animation: shadow 3s ease-out;
+    border-radius: 100%;
+    width: 450px;
 }
 
 #name {
@@ -52,8 +30,8 @@
     -webkit-text-fill-color: transparent;
     font-size: clamp(15px, 5vw, 75px);
 
-    animation: boom 2s ease;
-    animation-delay: 1s;
+    /* animation: boom 2s ease;
+    animation-delay: 1s; */
     
 }
 
@@ -133,39 +111,21 @@
         width: 30%;
     }
 
-    #container-img-div {
-        background-color: blue;
-        width: 55%;
-    }
-
-    #img-profile-div {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-image: linear-gradient(170deg, rgba(255, 0, 0, 0.541), rgba(89, 0, 255, 0.616), rgb(255, 175, 84), rgba(255, 16, 156, 0.582), rgba(228, 120, 255, 0.548), rgb(185, 132, 245), rgb(220, 231, 243));
-        box-shadow:
-            0px 0px 8px 4px rgba(255, 0, 0, 0.404),
-            0px 15px 8px 8px rgb(255, 255, 255),
-            0px 0px 8px 11px rgba(68, 0, 255, 0.356);
-    }
-
     #imgProfile {
         margin: 10px;
-        width: 95%;
         height: 90%;
         box-shadow: 0px 0px 1000px 20px #a200ff7a;
         border-radius: 100%;
+        width: 95%;
 
-        animation: shadow-vert 2s ease;
-        animation-delay: 1s;
+        /* animation: shadow-vert 2s ease;
+        animation-delay: 1s; */
     }
 
-    #name {
+    /* #name {
         animation: boom-vert 1s ease;
         animation-duration: 4s;
-    }
+    } */
 
     #profile h1 {
         font-size: 50px;
@@ -180,6 +140,12 @@
     #profile span {
         font-size: 50px;
         color: white;
+    }
+
+    #imgProfile {
+        box-shadow: 0px 0px 1000px 20px #a200ff7a;
+        border-radius: 100%;
+        width: 250px;
     }
 
     #paragraph-text  {
