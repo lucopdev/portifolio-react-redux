@@ -3,28 +3,30 @@
 }
 
 .navigation {
-  height: 80px;
-  display: flex;
-  justify-content: flex-end;
   align-items: center;
+  display: flex;
+  height: 80px;
+  justify-content: flex-end;
+  width: 84%;
 }
 
 .navigation ul {
-  width: 250px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-right: 40px;
+  width: 350px;
 }
 
 .navigation li {
   list-style: none;
-  font-size: 15px;
-  color: antiquewhite;
+  font-size: 22px;
+  color: rgb(119, 92, 115);
 }
 
 .navigation li:hover {
   cursor: pointer;
+
+  animation: colorPass 0.12s infinite;
 }
 
 @media (max-width: 730px) {
@@ -42,24 +44,14 @@
   }
 
   .navigation li {
-      color: #5af88a;
       list-style: none;
-      font-size: 15px;
-      background-image: linear-gradient(to right, var(--corTexto1), var(--corTexto2));
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+      font-size: 18px;
       margin: 0 25px;
-  }
-
-  .navigation li:hover {
-      cursor: pointer;
   }
 }
 
 @media (max-width: 440px) {
   #threeLineIcon {
-      color: #5af88a;
       border-bottom: none;
       text-align: right;
       display: block;
@@ -67,17 +59,25 @@
       font-size: 35px;
   }
 
-  #threeLineIcon:hover {
-    cursor: pointer;
-  }
-
   #threeLineIcon a {
     color: #5af88a;
     text-decoration: none;
   }
 
+  .threeLineIconBtn {
+    background-color: rgba(192, 125, 231, 0);
+    border: none;
+    color:var(--corNavigation3);
+    font-size: 40px;
+  }
+
+  .threeLineIconBtn:hover {
+    cursor: pointer;
+  }
+
   .navigation {
     height: 20px;
+    width: 100%;
   }
 
   .navigation ul {
@@ -89,7 +89,11 @@
   }
 
   .navigation li {
-      color: #5af88a;
       display: none;
   }
+}
+
+@keyframes colorPass {
+  0% {color: rgb(119, 92, 115);}
+  100% {color: var(--corNavigation3);}
 }

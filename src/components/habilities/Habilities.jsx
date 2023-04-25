@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import imageList from '../../data/imageList';
+import imageList from '../../data/techLogoList';
 import './habilities.css';
 import ImageComponent from '../ImageComponent/ImageComponent';
 
@@ -9,7 +9,7 @@ class Habilities extends Component {
       <section className="habilities-main-section">
         <div className="habilities-span-title">
           <span>
-            Habilidades
+            Competências
           </span>
         </div>
         <div className="habilities-main-text-div">

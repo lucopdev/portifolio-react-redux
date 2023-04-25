@@ -6,7 +6,7 @@ class About extends Component {
     return (
       <section className="about-main-text-div">
         <div>
-          <span>
+          <span id="aboutRef">
             Quem sou eu?
           </span>
         </div>
