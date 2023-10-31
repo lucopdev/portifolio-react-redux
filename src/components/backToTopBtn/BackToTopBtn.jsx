@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import './backToTopBtn.css';
 import { FiChevronsUp } from 'react-icons/fi';
+import './backToTopBtn.css';
 
 class BackToTopBtn extends Component {
   state = {

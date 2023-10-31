@@ -1,5 +1,6 @@
 footer {
   text-align: center;
   font-size: 10px;
-  color: rgb(60, 255, 0);height: 100px;
+  color: var(--contrastColor);
+  height: 100px;
 }

@@ -1,19 +1,27 @@
 .projects-main {
-  margin: 0 auto;
+  margin: 80px auto;
   align-items: center;
   display: flex;
   flex-flow: column;
   justify-content: space-evenly;
-  width: 90%;
+  width: 100%;
 }
 
 .projects-main h1 {
   color: var(--corTexto1);
-  background-image: linear-gradient(145deg, rgb(98, 0, 255), rgb(204, 0, 255), rgb(253, 60, 173), rgb(199, 140, 204));
+  background-image: linear-gradient(
+    145deg,
+    rgb(98, 0, 255),
+    rgb(204, 0, 255),
+    rgb(253, 60, 173),
+    rgb(199, 140, 204)
+    );
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-size: 70px;
+  font-size: clamp(40px, 5vw, 75px);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
   margin-bottom: 50px;
 }
 
@@ -22,21 +30,7 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
-  width: 85%;
-}
-
-.project-div {
-  align-items: flex-start;
-  background-color: rgb(0, 0, 0);
-  box-shadow: 0px 0px 20px rgba(204, 0, 255, 0.288);
-  border-radius: 10px;
-  display: flex;
-  height: 320px;
-  justify-content: center;
-  margin: 20px;
-  width: 320px;
-  position: relative;
-  opacity: 45%;
+  width: 80%;
 }
 
 .project-div:hover {
@@ -47,11 +41,12 @@
   text-align: center;
   background-color: rgba(128, 0, 128, 0.219);
   border-radius: 10px;
-  color: rgb(115, 255, 0);
+  color: var(--contrastColor);
   font-size: 30px;
   position: absolute;
-  text-transform: uppercase;
   width: 100%;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
 }
 
 .project-img {
@@ -59,10 +54,11 @@
   box-shadow: 0px 0px 20px rgba(204, 0, 255, 0.288);
   height: 100%;
   border-radius: 10px;
+  width: 100%;
 }
 
 @media (max-width: 440px) {
-  .project-div {
+  /* .project-div {
     opacity: 90%;
-  }
+  } */
 }

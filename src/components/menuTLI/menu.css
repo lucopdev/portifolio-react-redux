@@ -1,0 +1,56 @@
+/* esconde os itens do menu por padrão */
+.menu-tli a li {
+  display: none;
+}
+
+/* adiciona estilo para a versão mobile */
+@media (max-width: 450px) {
+  .menu-tli {
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    right: 0px;
+    border: 2px solid rgba(255, 255, 255, 0.7);
+    border-radius: 5px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    overflow-x: hidden;
+    position: absolute;
+    top: 0px;
+    transition: width 0.3s ease-in-out;
+    z-index: 1;
+  }
+
+  /* exibe o menu quando aparecer */
+  .menu-tli.appear {
+    height: 250px;
+    width: 180px;
+  }
+
+  /* esconde o menu quando desaparecer */
+  .menu-tli.disappear {
+    border: none;
+    height: 250px;
+    width: 0;
+  }
+
+  /* adiciona estilo aos itens do menu */
+  .menu-tli ul {
+    align-items: center;
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+  }
+
+  .menu-tli a li {
+    display: block;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 300;
+    text-shadow: 2px 2px 2px black;
+    text-decoration: none;
+  }
+}

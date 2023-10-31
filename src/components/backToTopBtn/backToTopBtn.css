@@ -1,17 +1,27 @@
 .backToTopBtn-div button {
   animation: showOn 1s;
-  color: rgb(102, 255, 0);
+  color: var(--contrastColor);
   font-size: 50px;
-  font-weight: bolder;
-  background-color: rgba(204, 0, 255, 0.103);
+  background-color: var(--transparentLabel);
   bottom: 50px;
-  border: 2px solid rgba(102, 255, 0, 0.301);
+  border: 2px solid rgba(217, 245, 117, 0.226);
   border-radius: 100%;
   box-shadow: 0px 0px 13px rgba(145, 255, 0, 0.164);
   height: 80px;
   position: fixed;
   right: 50px;
   width: 80px;
+  border-radius: 50%;
+  background: #400040;
+  box-shadow: inset 15px 15px 20px #240024,
+              inset -15px -15px 20px #5c005c;
+}
+
+.backToTopBtn-div button:hover {
+  border-radius: 50%;
+  background: linear-gradient(145deg, #440044, #3a003a);
+  box-shadow:  15px 15px 20px #24002418,
+               -15px -15px 20px #5c005c1a;
 }
 
 .btnTopOff button {

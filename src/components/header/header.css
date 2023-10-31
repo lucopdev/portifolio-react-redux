@@ -8,6 +8,9 @@
   height: 80px;
   justify-content: flex-end;
   width: 84%;
+  position: fixed;
+  top: 0px;
+  z-index: 5;
 }
 
 .navigation ul {
@@ -20,7 +23,7 @@
 .navigation li {
   list-style: none;
   font-size: 22px;
-  color: rgb(119, 92, 115);
+  color: rgb(175, 118, 167);
 }
 
 .navigation li:hover {
@@ -29,34 +32,73 @@
   animation: colorPass 0.12s infinite;
 }
 
-@media (max-width: 730px) {
+@media (max-width: 910px) {
   .navigation {
-      height: 50px;
-      display: flex;
-      align-items: center;
+    width: 100%;
   }
 
   .navigation ul {
-      width: 100%;
-      display: flex;
-      flex-direction: row;
-      justify-content: flex-end;
-  }
-
-  .navigation li {
-      list-style: none;
-      font-size: 18px;
-      margin: 0 25px;
+    justify-content: space-evenly;
+    width: 80%;
   }
 }
 
+@media (max-width: 730px) {
+  .navigation {
+    align-items: center;
+    display: flex;
+    height: 50px;
+    width: 100%;
+  }
+
+  .navigation ul {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .navigation li {
+    list-style: none;
+    font-size: 18px;
+    margin: 0 5px;
+  }
+
+  /* .contacts-div {
+    margin-top: 20px;
+  } */
+}
+
 @media (max-width: 440px) {
+
+  .navigation {
+    height: 50px;
+    width: 100%;
+    background-color: rgba(107, 0, 128, 0.205);
+  }
+
+  /* .contacts-div {
+    margin-top: 80px;
+  } */
+
+  .navigation ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 100%;
+  }
+
+  .navigation li {
+    display: none;
+  }
+
   #threeLineIcon {
-      border-bottom: none;
-      text-align: right;
-      display: block;
-      margin: 65px 20px 0 0;
-      font-size: 35px;
+    align-items: center;
+    justify-content: flex-end;
+    border-bottom: none;
+    display: flex;
+    font-size: 35px;
+    /* margin-top: 80px; */
   }
 
   #threeLineIcon a {
@@ -67,33 +109,22 @@
   .threeLineIconBtn {
     background-color: rgba(192, 125, 231, 0);
     border: none;
-    color:var(--corNavigation3);
+    color: white;
     font-size: 40px;
+    z-index: 3;
   }
 
   .threeLineIconBtn:hover {
     cursor: pointer;
   }
-
-  .navigation {
-    height: 20px;
-    width: 100%;
-  }
-
-  .navigation ul {
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-    margin-right: 0px;
-    width: 100%;
-  }
-
-  .navigation li {
-      display: none;
-  }
 }
 
 @keyframes colorPass {
-  0% {color: rgb(119, 92, 115);}
-  100% {color: var(--corNavigation3);}
+  0% {
+    color: rgb(119, 92, 115);
+  }
+
+  100% {
+    color: var(--contrastColor);
+  }
 }

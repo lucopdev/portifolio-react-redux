@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: row-reverse;
     justify-content: space-evenly;
-    margin: 100px auto;
+    margin: 155px auto;
     width: 85vw;
 }
 
@@ -32,7 +32,13 @@
 
 #name {
     background-clip: text;
-    background-image: linear-gradient(145deg, rgb(98, 0, 255), rgb(204, 0, 255), rgb(253, 60, 173), rgb(199, 140, 204));
+    background-image: linear-gradient(
+        145deg,
+        rgb(98, 0, 255),
+        rgb(204, 0, 255),
+        rgb(253, 60, 173),
+        rgb(199, 140, 204)
+        );
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-size: clamp(15px, 5vw, 75px);
@@ -41,15 +47,15 @@
 }
 
 #profile span {
-    color: antiquewhite;
-    font-size: clamp(15px, 3.1vw, 70px);
+    color: var(--contrastColor);
+    font-size: clamp(15px, 3.5vw, 70px);
 
     animation: titleShowRight 3s;
 }
 
 #presentation-text {
     color: antiquewhite;
-    font-size: clamp(8px, 2vw, 15px);
+    font-size: clamp(8px, 4.0vw, 15px);
     margin-top: 20px;
     text-align: justify;
     width: clamp(10vw, 35vw, 30vw);
@@ -60,14 +66,22 @@
 #contents-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;    
+    height: fit-content;
+    justify-content: center;
+    margin: 200px auto 0px auto;
     text-align: center;
-    margin: 200px auto 100px auto;
     width: 50%;
+    /* background-color: red; */
 }
 
 #contents-container span {
-    background-image: linear-gradient(145deg, rgb(98, 0, 255), rgb(204, 0, 255), rgb(253, 60, 173), rgb(199, 140, 204));
+    background-image: linear-gradient(
+        145deg,
+        rgb(98, 0, 255),
+        rgb(204, 0, 255),
+        rgb(253, 60, 173),
+        rgb(199, 140, 204)
+        );
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -75,13 +89,12 @@
 }
 
 .contents {
-    margin-bottom: 50px;
+    height: max-content;
+    /* background-color: blue; */
 }
 
 .projects-container {
-    margin: 0px auto;
-    margin-bottom: 50px;
-    width: 90%;
+    width: 100%;
 }
 
 @media (max-width: 1150px) {
@@ -123,9 +136,9 @@
         align-items: center;
         display: flex;
         flex-direction: column;
-        height: 80vh;
+        height: 91vh;
         justify-content: space-evenly;
-        margin-top: 10px;
+        margin-top: 0px;
         width: 100%;
     }
 
@@ -143,31 +156,45 @@
         align-items: center;
         display: flex;
         justify-content: center;
-        height: 80%;
-        margin-top: 0px;
-        width: 80%;
+        height: fit-content;
+        margin-top: 55px;
+        width: fit-content;
     }
 
     #imgProfile {
         box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.466),
                     0px 0px 1000px 20px #a200ff7a;
         border-radius: 100%;
-        width: 250px;
+        width: 240px;
     }
 
     #profile h1 {
-        font-size: 50px;
         color: var(--corTexto1);
+        background-image: linear-gradient(
+            145deg,
+            rgb(98, 0, 255),
+            rgb(204, 0, 255),
+            rgb(253, 60, 173),
+            rgb(199, 140, 204)
+            );
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        font-size: 40px;
         width: fit-content;
-        background-image: linear-gradient(145deg, rgb(98, 0, 255), rgb(204, 0, 255), rgb(253, 60, 173), rgb(199, 140, 204));
-        background-clip: text;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
     }
 
     #profile span {
         font-size: 50px;
-        color: white;
+        color: var(--contrastColor);
+    }
+
+    #presentation-text {
+        color: antiquewhite;
+        font-size: clamp(8px, 4.0vw, 17px);
+        margin-top: 20px;
+        text-align: justify;
+        width: 200px;  
     }
 
     #paragraph-text  {
@@ -182,10 +209,28 @@
     #contents-container {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;    
+        justify-content: center;    
         text-align: center;
-        margin: 150px auto;
+        margin-top: 150px;
         width: 90%;
+    }
+}
+
+@media (max-width: 415px) {
+    #profile {
+        width: 50%;
+    }
+    
+    .img-div {
+        margin-top: 80px;
+    }
+
+    #presentation-text {
+        color: antiquewhite;
+        font-size: clamp(8px, 4.0vw, 17px);
+        margin-top: 20px;
+        text-align: justify;
+        width: 200px;  
     }
 }
 

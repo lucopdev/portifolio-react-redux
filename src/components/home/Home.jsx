@@ -1,19 +1,21 @@
 import React, { Component } from 'react';
 import euzinho from '../../image/tryber.png';
-import './Home.css';
 import Header from '../header/Header';
 import About from '../about/About';
 import Habilities from '../habilities/Habilities';
 import Projects from '../projects/Projects';
+import './Home.css';
 
 class Home extends Component {
   render() {
     return (
-      <div id="top">
+      <div>
         <Header />
         <section id="profile">
           <div className="img-div">
             <img
+              data-aos="fade-up"
+              data-aos-duration="2500"
               id="imgProfile"
               src={ euzinho }
               alt="Foto de perfil Lucas Silveira da Rosa"
@@ -24,7 +26,7 @@ class Home extends Component {
           </div>
 
           <div id="name-profile-div">
-            <h1 id="name" className="hero-title">WEB developer</h1>
+            <h1 id="name" className="hero-title">Web developer</h1>
             <span>Portifólio</span>
             <p id="presentation-text">
               Veja mais detalhes sobre mim,
