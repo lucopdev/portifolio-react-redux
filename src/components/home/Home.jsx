@@ -35,9 +35,9 @@ class Home extends Component {
             </h1>
             <span>Portifólio</span>
             <p id="presentation-text">
-              Veja mais detalhes sobre mim, meus
-              exercícios e projetos realizados ao longo de 2023
-              na Trybe
+              Veja mais detalhes sobre mim,
+              meus exercícios realizados na Trybe e projetos pessoais
+              ao longo de 2023 e 2024.
             </p>
           </div>
         </section>

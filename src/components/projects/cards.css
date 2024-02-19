@@ -25,7 +25,7 @@
   padding: 15px;
   position: absolute;
   text-align: center;
-  width: 99%;
+  width: 100%;
   z-index: 5;
 
   box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 60px -12px inset,
@@ -89,7 +89,14 @@
 
 @media (max-width: 660px) {
   .cardBox {
-    height: 250px;
-    width: 150px;
+    height: 180px;
+    width: 120px;
+  }
+
+  .card {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
   }
 }

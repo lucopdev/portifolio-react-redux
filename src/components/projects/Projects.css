@@ -31,7 +31,7 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: space-evenly;
-  width: 95%;
+  width: 80%;
 }
 
 .project-div:hover {
@@ -59,7 +59,7 @@
 }
 
 @media (max-width: 440px) {
-  /* .project-div {
-    opacity: 90%;
-  } */
+  .projects-board {
+    width: 100%;
+  }
 }
