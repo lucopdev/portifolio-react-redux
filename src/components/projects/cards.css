@@ -69,28 +69,6 @@
   transform: translateY(0);
 }
 
-/* .cardBox::before {
-  animation: glowing01 5s linear infinite;
-  animation: glowing 5s linear infinite;
-  background: #40E0D0;
-  content: "";
-  height: 150%;
-  position: absolute;
-  transform-origin: center;
-  width: 40%;
-
-  background: -webkit-linear-gradient(to right,
-  rgb(98, 0, 255),
-  rgb(204, 0, 255),
-  rgb(253, 60, 173),
-  rgb(199, 140, 204));
-  background: linear-gradient(to right,
-  rgb(98, 0, 255),
-  rgb(204, 0, 255),
-  rgb(253, 60, 173),
-  rgb(199, 140, 204));
-} */
-
 .text-title {
   font-size: 20px;
 }
@@ -106,5 +84,12 @@
 
   100% {
     transform: rotate(360deg);
+  }
+}
+
+@media (max-width: 660px) {
+  .cardBox {
+    height: 250px;
+    width: 150px;
   }
 }
