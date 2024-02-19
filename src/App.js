@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import AOS from 'aos';
 import BackToTopBtn from './components/backToTopBtn/BackToTopBtn';
 import Home from './components/home/Home';
-import Footer from './components/footer/Footer';
 import 'aos/dist/aos.css';
 
 class App extends Component {
@@ -13,7 +12,6 @@ class App extends Component {
     return (
       <section id="top" className="main-app">
         <Home />
-        <Footer />
         <BackToTopBtn />
       </section>
     );

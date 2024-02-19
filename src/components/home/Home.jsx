@@ -6,6 +6,7 @@ import Habilities from '../habilities/Habilities';
 import Projects from '../projects/Projects';
 import './Home.css';
 import Contact from '../contact/Contact';
+import Footer from '../footer/Footer';
 
 class Home extends Component {
   render() {
@@ -34,8 +35,8 @@ class Home extends Component {
             </h1>
             <span>Portifólio</span>
             <p id="presentation-text">
-              Veja mais detalhes sobre mim, meus exercícios
-              e projetos realizados ao longo de 2023
+              Veja mais detalhes sobre mim, meus
+              exercícios e projetos realizados ao longo de 2023
               na Trybe
             </p>
           </div>
@@ -54,6 +55,9 @@ class Home extends Component {
         </div>
         <div className="contact-container">
           <Contact />
+        </div>
+        <div className="footer-container">
+          <Footer />
         </div>
       </div>
     );
