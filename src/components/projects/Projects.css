@@ -1,28 +1,29 @@
 .projects-main {
-  margin: 80px auto;
   align-items: center;
   display: flex;
   flex-flow: column;
   justify-content: space-evenly;
+  margin: 80px auto;
   width: 100%;
 }
 
 .projects-main h1 {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
   color: var(--corTexto1);
+  font-family: 'Roboto', sans-serif;
+  font-size: clamp(40px, 5vw, 75px);
+  font-weight: 100;
+  margin-bottom: 50px;
+
   background-image: linear-gradient(
     145deg,
     rgb(98, 0, 255),
     rgb(204, 0, 255),
     rgb(253, 60, 173),
     rgb(199, 140, 204)
-    );
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-size: clamp(40px, 5vw, 75px);
-  font-family: 'Roboto', sans-serif;
-  font-weight: 100;
-  margin-bottom: 50px;
+  );
 }
 
 .projects-board {
@@ -38,22 +39,22 @@
 }
 
 .project-name {
-  text-align: center;
   background-color: rgba(128, 0, 128, 0.219);
   border-radius: 10px;
   color: var(--contrastColor);
-  font-size: 30px;
-  position: absolute;
-  width: 100%;
   font-family: 'Roboto', sans-serif;
+  font-size: 30px;
   font-weight: 300;
+  position: absolute;
+  text-align: center;
+  width: 100%;
 }
 
 .project-img {
   background-color: black;
-  box-shadow: 0px 0px 20px rgba(204, 0, 255, 0.288);
-  height: 100%;
   border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(204, 0, 255, 0.288);
+  height: 200px;
   width: 100%;
 }
 

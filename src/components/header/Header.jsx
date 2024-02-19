@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import { FiMenu } from 'react-icons/fi';
 import Menu from '../menuTLI/Menu';
 import './header.css';
-import Contacts from '../contacts/Contacts';
+import Social from '../social/Social';
 
 class Header extends Component {
   state = {
@@ -25,7 +25,7 @@ class Header extends Component {
     return (
       <nav className="navigation">
         <div className="contacts-div">
-          <Contacts />
+          <Social />
         </div>
         <Menu
           isClicked={ isClicked }
@@ -34,7 +34,7 @@ class Header extends Component {
         <ul id="navigation-list">
           <a href="#aboutRef"><li>Sobre</li></a>
           <a href="#projectsRef"><li>Projetos</li></a>
-          <a href="#contactsRef"><li>Contatos</li></a>
+          <a href="#contactRef"><li>Contato</li></a>
           <li className="botaoMenuJs" id="threeLineIcon">
             <button
               onClick={ this.handleClickMenu }

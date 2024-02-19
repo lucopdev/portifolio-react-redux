@@ -12,7 +12,7 @@ class Menu extends Component {
         <ul>
           <a onClick={ handleClickLink } href="#aboutRef"><li>Sobre</li></a>
           <a onClick={ handleClickLink } href="#projectsRef"><li>Projetos</li></a>
-          <a onClick={ handleClickLink } href="#contactsRef"><li>Contatos</li></a>
+          <a onClick={ handleClickLink } href="#contactRef"><li>Contato</li></a>
         </ul>
       </div>
     );

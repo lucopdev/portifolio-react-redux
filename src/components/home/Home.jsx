@@ -5,12 +5,15 @@ import About from '../about/About';
 import Habilities from '../habilities/Habilities';
 import Projects from '../projects/Projects';
 import './Home.css';
+import Contact from '../contact/Contact';
 
 class Home extends Component {
   render() {
     return (
       <div>
-        <Header />
+        <div className="header-container">
+          <Header />
+        </div>
         <section id="profile">
           <div className="img-div">
             <img
@@ -26,11 +29,14 @@ class Home extends Component {
           </div>
 
           <div id="name-profile-div">
-            <h1 id="name" className="hero-title">Web developer</h1>
+            <h1 id="name" className="hero-title">
+              Web developer
+            </h1>
             <span>Portifólio</span>
             <p id="presentation-text">
-              Veja mais detalhes sobre mim,
-              meus exercícios e projetos realizados ao longo de 2023 na Trybe
+              Veja mais detalhes sobre mim, meus exercícios
+              e projetos realizados ao longo de 2023
+              na Trybe
             </p>
           </div>
         </section>
@@ -45,6 +51,9 @@ class Home extends Component {
         </section>
         <div className="projects-container">
           <Projects />
+        </div>
+        <div className="contact-container">
+          <Contact />
         </div>
       </div>
     );

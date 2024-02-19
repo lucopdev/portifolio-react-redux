@@ -5,12 +5,13 @@ import memeGenerator from '../image/memegenerator.png';
 import pixelArt from '../image/pixelart.png';
 import trivia from '../image/trivia.png';
 import recipesApp from '../image/recipes-app.png';
+import cointrack from '../image/cointrack.jpeg';
 
 const projectsData = [
   {
-    name: 'Recipe App',
-    url: '',
-    img: '',
+    name: 'Cointrack',
+    url: 'https://cointrack.surge.sh/',
+    img: cointrack,
     module: 'Frontend',
     repository: '',
   },

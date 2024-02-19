@@ -9,16 +9,15 @@
 .about-main-p {
   color: antiquewhite;
   display: flex;
-  font-size: 15px;
-  justify-content: space-evenly;
-  text-align: justify;
   display: flex;
   flex-flow: column;
-  justify-content: space-evenly;  
+  font-size: 15px;
+  justify-content: space-evenly;
+  justify-content: space-evenly;
+  text-align: justify;
 }
 
 @media (max-width: 729px) {
-
   .about-main-text-div {
     height: calc(var(--p-height) * 4 + 30px);
   }
@@ -64,8 +63,8 @@
       align-content: stretch;
       display: flex;
       flex-flow: column;
-      justify-content: center;
       height: 250px;
+      justify-content: center;
     }
   }
 }
