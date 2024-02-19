@@ -12,8 +12,7 @@ class Header extends Component {
 
   handleClickMenu = () => {
     const { isClicked } = this.state;
-    if (isClicked === false) this.setState({ isClicked: true });
-    if (isClicked === true) this.setState({ isClicked: false });
+    this.setState({ isClicked: !isClicked });
   };
 
   handleClickLink = () => {
@@ -27,19 +26,19 @@ class Header extends Component {
         <div className="contacts-div">
           <Social />
         </div>
-        <Menu
-          isClicked={ isClicked }
-          handleClickLink={ this.handleClickLink }
-        />
+        <Menu isClicked={ isClicked } handleClickLink={ this.handleClickLink } />
         <ul id="navigation-list">
-          <a href="#aboutRef"><li>Sobre</li></a>
-          <a href="#projectsRef"><li>Projetos</li></a>
-          <a href="#contactRef"><li>Contato</li></a>
+          <a href="#aboutRef">
+            <li>Sobre</li>
+          </a>
+          <a href="#projectsRef">
+            <li>Projetos</li>
+          </a>
+          <a href="#contactRef">
+            <li>Contato</li>
+          </a>
           <li className="botaoMenuJs" id="threeLineIcon">
-            <button
-              onClick={ this.handleClickMenu }
-              className="threeLineIconBtn"
-            >
+            <button onClick={ this.handleClickMenu } className="threeLineIconBtn">
               <FiMenu />
             </button>
           </li>

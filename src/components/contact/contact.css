@@ -67,6 +67,10 @@
   );
 }
 
+.contact-fieldset input::placeholder {
+  color: white;
+}
+
 .contact-fieldset textarea {
   background-color: grey;
   border-radius: 10px;
@@ -87,6 +91,9 @@
   );
 }
 
+.contact-fieldset textarea::placeholder {
+  color: white;
+}
 .contact-fieldset button {
   font-weight: 400;
   background-color: grey;

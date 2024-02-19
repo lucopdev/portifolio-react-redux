@@ -2,17 +2,11 @@
   height: calc(var(--p-height) * 3 + 80px);
 }
 
-.about-main-text-div div {
-  margin-bottom: 20px;
-}
-
 .about-main-p {
   color: antiquewhite;
   display: flex;
-  display: flex;
   flex-flow: column;
   font-size: 15px;
-  justify-content: space-evenly;
   justify-content: space-evenly;
   text-align: justify;
 }

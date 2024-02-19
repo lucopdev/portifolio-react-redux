@@ -7,7 +7,7 @@ class Menu extends Component {
     const { handleClickLink, isClicked } = this.props;
     return (
       <div
-        className={ `menu-tli  ${isClicked ? 'appear' : 'disappear'}` }
+        className={ `menu-tli ${isClicked ? 'appear' : 'disappear'}` }
       >
         <ul>
           <a onClick={ handleClickLink } href="#aboutRef"><li>Sobre</li></a>

@@ -6,11 +6,10 @@
   align-items: center;
   display: flex;
   height: 80px;
-  justify-content: center;
+  justify-content: space-between;
   position: fixed;
   top: 0;
-  
-  /* border: 2px solid white; */
+
   z-index: 5;
 }
 
@@ -34,7 +33,7 @@
 
 @media (max-width: 1300px) {
   .navigation {
-    width: 100%;
+    width: 90%;
   }
 
   .navigation ul {
@@ -73,12 +72,15 @@
   .navigation {
     background-color: rgba(107, 0, 128, 0.205);
     height: 50px;
+    width: 100%;
   }
 
   .navigation ul {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    margin-top: 10px;
+    align-items: end;
   }
 
   .navigation li {
@@ -103,6 +105,7 @@
     border: none;
     color: white;
     font-size: 40px;
+
     z-index: 3;
   }
 
