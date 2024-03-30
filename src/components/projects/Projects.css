@@ -38,18 +38,6 @@
   opacity: 100%;
 }
 
-.project-name {
-  background-color: rgba(128, 0, 128, 0.219);
-  border-radius: 10px;
-  color: var(--contrastColor);
-  font-family: 'Roboto', sans-serif;
-  font-size: 30px;
-  font-weight: 300;
-  position: absolute;
-  text-align: center;
-  width: 100%;
-}
-
 .project-img {
   background-color: black;
   border-radius: 10px;
@@ -58,8 +46,12 @@
   width: 100%;
 }
 
-@media (max-width: 440px) {
+@media (max-width: 740px) {
   .projects-board {
     width: 100%;
+  }
+
+  .project-img {
+    height: 100px;
   }
 }

@@ -16,6 +16,12 @@ class Contact extends Component {
 
   handleClick = () => {
     const { name, email, message } = this.state;
+
+    if ((name === '', email === '', message === '')) {
+      alert('Preencha todos os campos');
+      return;
+    }
+
     console.log(name, email, message);
   };
 

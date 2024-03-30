@@ -53,15 +53,14 @@
   padding-bottom: 10px;
 }
 
-.card .contentCard p {
-  font-size: 1.6rem;
-  line-height: 25px;
-}
-
 .card .contentCard {
   opacity: 0;
   transform: translateY(100%);
   transition: 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .card:hover .contentCard {
@@ -70,7 +69,21 @@
 }
 
 .text-title {
+  font-size: 30px;
+  margin-top: 10px;
+}
+
+.text-body {
+  font-size: 15px;
+  margin-bottom: 10px;
+}
+
+.text-repo {
+  background-color: #9e92be;
+  border-radius: 10px;
+  padding: 10px;
   font-size: 20px;
+  width: 150px;
 }
 
 .project-image {
@@ -96,5 +109,28 @@
   .card {
     margin: 0px;
     padding: 0px;
+  }
+
+  .text-title {
+    font-size: 10px;
+    margin-top: 10px;
+  }
+
+  .text-body {
+    font-size: 8px;
+    margin-bottom: 2px;
+  }
+
+  .text-repo {
+    background-color: #9e92be;
+    border-radius: 2px;
+    padding: 2px;
+    font-size: 10px;
+    height: 15px;
+    width: 80px;
+  }
+
+  .contentCard {
+    display: none;
   }
 }

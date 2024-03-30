@@ -1,6 +1,7 @@
+/* eslint-disable max-len */
+/* eslint-disable react/jsx-max-depth */
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-// import PropTypes from 'prop-types';
 import projectsData from '../../data/projectsData';
 import './Projects.css';
 import './cards.css';
@@ -25,15 +26,17 @@ class Projects extends Component {
                 className="cardBox"
               >
                 <div className="card">
-                  {/* <span className="textCard">EM BREVE</span> */}
-                  <img
-                    className="project-img"
-                    src={ project.img }
-                    alt={ project.name }
-                  />
+                  <img className="project-img" src={ project.img } alt={ project.name } />
                   <div className="contentCard">
                     <h2 className="text-title">{project.name}</h2>
-                    <p className="text-body">details</p>
+                    <p className="text-body">
+                      Tech:
+                      {' '}
+                      {project.tech}
+                    </p>
+                    <a href={ project.repository } target="_blank" rel="noreferrer">
+                      <h5 className="text-repo">Repositório</h5>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -44,9 +47,5 @@ class Projects extends Component {
     );
   }
 }
-
-// Projects.propTypes = {
-//   history: PropTypes.shape().isRequired,
-// };
 
 export default Projects;

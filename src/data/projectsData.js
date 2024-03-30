@@ -10,6 +10,7 @@ import cointrack from '../image/cointrack.jpeg';
 const projectsData = [
   {
     name: 'Cointrack',
+    tech: 'flutter',
     url: 'https://cointrack.surge.sh/',
     img: cointrack,
     module: 'Frontend',
@@ -17,6 +18,7 @@ const projectsData = [
   },
   {
     name: 'Recipe App',
+    tech: 'React',
     url: 'https://lucopdev-recipesapp.surge.sh/',
     img: recipesApp,
     module: 'Frontend',
@@ -24,6 +26,7 @@ const projectsData = [
   },
   {
     name: 'TrybeTunes',
+    tech: 'React',
     url: 'http://lucopdev-trybetunes.surge.sh',
     img: trybetunes,
     module: 'Frontend',
@@ -31,6 +34,7 @@ const projectsData = [
   },
   {
     name: 'Tryunfo',
+    tech: 'React',
     url: 'https://lucopdev-tryunfo.surge.sh/',
     img: tryunfo,
     module: 'Frontend',
@@ -38,6 +42,7 @@ const projectsData = [
   },
   {
     name: 'TrybeWallet',
+    tech: 'React',
     url: 'https://lucopdev-trybewallet.surge.sh/',
     img: trybewallet,
     module: 'Frontend',
@@ -45,6 +50,7 @@ const projectsData = [
   },
   {
     name: 'Trivia',
+    tech: 'React',
     url: 'https://lucopdev-trivia.surge.sh/',
     img: trivia,
     module: 'Frontend',
@@ -52,6 +58,7 @@ const projectsData = [
   },
   {
     name: 'Meme Generator',
+    tech: 'JavaScript',
     url: 'https://lucopdev-memegenerator.surge.sh/',
     img: memeGenerator,
     module: 'Fundaments',
@@ -59,6 +66,7 @@ const projectsData = [
   },
   {
     name: 'PIXEL-ART',
+    tech: 'JavaScript',
     url: 'https://lucopdev-pixelart.surge.sh/',
     img: pixelArt,
     module: 'Fundaments',
