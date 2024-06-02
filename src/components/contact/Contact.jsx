@@ -31,7 +31,7 @@ class Contact extends Component {
     return (
       <div className="contact">
         <h1 id="contactRef" className="contact-title">
-          Deixe seu recado
+          Deixe seu recado - (inativo)
         </h1>
         <fieldset className="contact-fieldset">
           <div className="input-container">
