@@ -6,8 +6,17 @@ import pixelArt from '../image/pixelart.png';
 import trivia from '../image/trivia.png';
 import recipesApp from '../image/recipes-app.png';
 import cointrack from '../image/cointrack.jpeg';
+import amazonTest from '../image/amazontest.png';
 
 const projectsData = [
+  {
+    name: 'Amazon Test',
+    tech: 'React',
+    url: 'https://amazontest.surge.sh/',
+    img: amazonTest,
+    module: 'Frontend',
+    repository: 'https://github.com/lucopdev/amazon-mainpage-test',
+  },
   {
     name: 'Cointrack',
     tech: 'flutter',
