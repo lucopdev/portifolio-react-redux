@@ -24,7 +24,7 @@
 
 @media (max-width: 680px) {
   .about-main-text-div {
-    height: calc(var(--p-height) * 5 + 30px);
+    height: 700px;
   }
   .about-main-text-div p {
     font-size: 2.8vw;
@@ -34,31 +34,31 @@
 
 @media (max-width: 550px) {
   .about-main-text-div {
-    height: calc(var(--p-height) * 4 + 30px);
+    height: 600px;
   }
 
   .about-main-text-div p {
     font-size: 2.8vw;
     height: 120px;
   }
+}
 
-  @media (max-width: 500px) {
-    .about-main-text-div {
-      height: calc(var(--p-height) * 3 + 30px);
-    }
-    .about-main-text-div p {
-      font-size: 2.8vw;
-      height: 110px;
-    }
+@media (max-width: 500px) {
+  .about-main-text-div {
+    height: 500px;
   }
+  .about-main-text-div p {
+    font-size: 2.8vw;
+    height: 110px;
+  }
+}
 
-  @media (max-width: 415px) {
-    .about-main-p {
-      align-content: stretch;
-      display: flex;
-      flex-flow: column;
-      height: 250px;
-      justify-content: center;
-    }
+@media (max-width: 415px) {
+  .about-main-p {
+    align-content: stretch;
+    display: flex;
+    flex-flow: column;
+    height: 250px;
+    justify-content: center;
   }
 }

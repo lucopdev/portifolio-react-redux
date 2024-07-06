@@ -29,37 +29,39 @@ class Contact extends Component {
     const { name, email, message } = this.state;
 
     return (
-      <div className="contact">
+      <div data-aos="fade-left" data-aos-duration="800" data-aos-delay="0" className="contact">
         <h1 id="contactRef" className="contact-title">
-          Deixe seu recado - (inativo)
+          Deixe seu recado
         </h1>
-        <fieldset className="contact-fieldset">
-          <div className="input-container">
-            <input
-              type="text"
-              name="name"
-              value={ name }
+        <form action="https://formspree.io/f/mgvwerny" method="POST">
+          <fieldset className="contact-fieldset">
+            <div className="input-container">
+              <input
+                type="text"
+                name="name"
+                value={ name }
+                onChange={ (event) => this.handleChange(event) }
+                placeholder="Nome"
+              />
+            </div>
+            <div className="input-container">
+              <input
+                type="email"
+                name="email"
+                value={ email }
+                onChange={ (event) => this.handleChange(event) }
+                placeholder="Email"
+              />
+            </div>
+            <textarea
+              name="message"
+              value={ message }
               onChange={ (event) => this.handleChange(event) }
-              placeholder="Nome"
+              placeholder="Digite sua mensagem..."
             />
-          </div>
-          <div className="input-container">
-            <input
-              type="email"
-              name="email"
-              value={ email }
-              onChange={ (event) => this.handleChange(event) }
-              placeholder="Email"
-            />
-          </div>
-          <textarea
-            name="message"
-            value={ message }
-            onChange={ (event) => this.handleChange(event) }
-            placeholder="Digite sua mensagem..."
-          />
-          <button onClick={ this.handleClick }>Enviar</button>
-        </fieldset>
+            <button onClick={ this.handleClick }>Enviar</button>
+          </fieldset>
+        </form>
       </div>
     );
   }

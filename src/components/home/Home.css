@@ -42,15 +42,8 @@
   -webkit-text-fill-color: transparent;
   animation: titleShowLeft 3s;
   background-clip: text;
+  background-image: linear-gradient(145deg, rgb(98, 0, 255), rgb(204, 0, 255), rgb(253, 60, 173), rgb(199, 140, 204));
   font-size: clamp(15px, 5vw, 75px);
-
-  background-image: linear-gradient(
-    145deg,
-    rgb(98, 0, 255),
-    rgb(204, 0, 255),
-    rgb(253, 60, 173),
-    rgb(199, 140, 204)
-  );
 }
 
 #profile span {
@@ -72,7 +65,8 @@
   display: flex;
   flex-direction: column;
   height: fit-content;
-  justify-content: center;
+  height: 1000px;
+  justify-content: space-between;
   margin: 200px auto 0px auto;
   text-align: center;
   width: 50%;
@@ -82,15 +76,8 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  background-image: linear-gradient(145deg, rgb(98, 0, 255), rgb(204, 0, 255), rgb(253, 60, 173), rgb(199, 140, 204));
   font-size: clamp(40px, 5vw, 75px);
-
-  background-image: linear-gradient(
-    145deg,
-    rgb(98, 0, 255),
-    rgb(204, 0, 255),
-    rgb(253, 60, 173),
-    rgb(199, 140, 204)
-  );
 }
 
 .contents {
@@ -108,7 +95,7 @@
   height: 500px;
   justify-content: center;
   margin-bottom: 150px;
-  margin-top: 250px;
+  margin-top: 200px;
   width: 100%;
 }
 
@@ -185,17 +172,10 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    background-image: linear-gradient(145deg, rgb(98, 0, 255), rgb(204, 0, 255), rgb(253, 60, 173), rgb(199, 140, 204));
     color: var(--corTexto1);
     font-size: 40px;
     width: fit-content;
-
-    background-image: linear-gradient(
-      145deg,
-      rgb(98, 0, 255),
-      rgb(204, 0, 255),
-      rgb(253, 60, 173),
-      rgb(199, 140, 204)
-    );
   }
 
   #profile span {
@@ -223,14 +203,37 @@
   #contents-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     margin-top: 150px;
     text-align: center;
     width: 90%;
+    height: 1300px;
+  }
+}
+
+@media (max-width: 680px) {
+  #contents-container {
+    height: 1400px;
+  }
+}
+
+@media (max-width: 600px) {
+  #contents-container {
+    height: 1300px;
+  }
+}
+
+@media (max-width: 550px) {
+  #contents-container {
+    height: 1200px;
   }
 }
 
 @media (max-width: 415px) {
+  #contents-container {
+    height: 1000px;
+  }
+
   #profile {
     width: 95%;
   }

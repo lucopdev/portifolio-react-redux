@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { FiChevronsUp } from 'react-icons/fi';
 import './backToTopBtn.css';
+import ScrollLink from '../ScrollLink/ScrollLink';
 
 class BackToTopBtn extends Component {
   state = {
@@ -28,11 +29,11 @@ class BackToTopBtn extends Component {
     const { isVisible } = this.state;
     return (
       <div className={ isVisible ? 'backToTopBtn-div' : 'btnTopOff' }>
-        <a href="#top">
+        <ScrollLink to="#top">
           <button className="btnTop">
             <FiChevronsUp />
           </button>
-        </a>
+        </ScrollLink>
       </div>
     );
   }

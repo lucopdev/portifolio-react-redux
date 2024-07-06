@@ -4,6 +4,7 @@ import { FiMenu } from 'react-icons/fi';
 import Menu from '../menuTLI/Menu';
 import './header.css';
 import Social from '../social/Social';
+import ScrollLink from '../ScrollLink/ScrollLink';
 
 class Header extends Component {
   state = {
@@ -28,15 +29,15 @@ class Header extends Component {
         </div>
         <Menu isClicked={ isClicked } handleClickLink={ this.handleClickLink } />
         <ul id="navigation-list">
-          <a href="#aboutRef">
+          <ScrollLink to="#aboutRef">
             <li>Sobre</li>
-          </a>
-          <a href="#projectsRef">
+          </ScrollLink>
+          <ScrollLink to="#projectsRef">
             <li>Projetos</li>
-          </a>
-          <a href="#contactRef">
+          </ScrollLink>
+          <ScrollLink to="#contactRef">
             <li>Contato</li>
-          </a>
+          </ScrollLink>
           <li className="botaoMenuJs" id="threeLineIcon">
             <button onClick={ this.handleClickMenu } className="threeLineIconBtn">
               <FiMenu />
