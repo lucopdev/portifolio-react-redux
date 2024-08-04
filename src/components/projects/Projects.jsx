@@ -7,7 +7,31 @@ import './Projects.css';
 import './cards.css';
 
 class Projects extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      currentImageIndex: projectsData.map(() => 0),
+    };
+  }
+
+  componentDidMount() {
+    const intervalInSeconds = 2000;
+    this.interval = setInterval(this.updateImageIndexes, intervalInSeconds);
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.interval);
+  }
+
+  updateImageIndexes = () => {
+    this.setState((prevState) => ({
+      currentImageIndex: prevState.currentImageIndex.map((index, i) => (index + 1) % projectsData[i].images.length),
+    }));
+  };
+
   render() {
+    const { currentImageIndex } = this.state;
+
     return (
       <section
         data-aos="fade-right"
@@ -26,7 +50,7 @@ class Projects extends Component {
                 className="cardBox"
               >
                 <div className="card">
-                  <img className="project-img" src={ project.img } alt={ project.name } />
+                  <img className="project-img" src={ project.images[currentImageIndex[index]] } alt={ project.name } />
                   <div className="contentCard">
                     <h2 className="text-title">{project.name}</h2>
                     <p className="text-body">
