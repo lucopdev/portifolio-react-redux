@@ -39,7 +39,8 @@ class Projects extends Component {
         data-aos-delay="0"
         className="projects-main"
       >
-        <h1 id="projectsRef">Projetos - Frontend</h1>
+        <h1 id="projectsRef">Projetos</h1>
+        <p className="projects-subtitle">Alguns dos projetos que desenvolvi desde o início dos estudos</p>
         <div className="projects-board">
           {projectsData.map((project, index) => (
             <Link key={ index } to={ { pathname: project.url } } target="blank">
