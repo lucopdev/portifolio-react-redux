@@ -11,8 +11,17 @@ import lucopGen from '../image/lucopgen.png';
 import carwish01 from '../image/carwish/carwish001.png';
 import carwish02 from '../image/carwish/carwish002.png';
 import carwish03 from '../image/carwish/carwish003.png';
+import hashgame from '../image/hashgame.png';
 
 const projectsData = [
+  {
+    name: 'Jogo Multiplayer',
+    tech: 'NextJS NodeJS/Socket.IO',
+    url: 'https://github.com/lucopdev/hash_game_1.1',
+    images: [hashgame],
+    module: 'FullStack',
+    repository: 'https://github.com/lucopdev/hash_game_1.1',
+  },
   {
     name: 'Carwish',
     tech: 'Flutter e NodeJS',
