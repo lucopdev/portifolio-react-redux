@@ -7,8 +7,17 @@ import trivia from '../image/trivia.png';
 import recipesApp from '../image/recipes-app.png';
 import cointrack from '../image/cointrack.jpeg';
 import amazonTest from '../image/amazontest.png';
+import lucopGen from '../image/lucopgen.png';
 
 const projectsData = [
+  {
+    name: 'LucopGen',
+    tech: 'TauriJS e NodeJS',
+    url: 'https://github.com/lucopdev/lucopgen-frontend',
+    img: lucopGen,
+    module: 'FullStack',
+    repository: 'https://github.com/lucopdev/lucopgen-frontend',
+  },
   {
     name: 'Amazon Test',
     tech: 'React',
