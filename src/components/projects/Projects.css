@@ -53,4 +53,11 @@
   .project-img {
     height: 100px;
   }
+
+  .projects-subtitle {
+    text-align: center;
+    padding: 20px;
+    color: gray;
+    font-size: 18px;
+  }
 }

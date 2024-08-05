@@ -33,7 +33,7 @@ class Contact extends Component {
         <h1 id="contactRef" className="contact-title">
           Deixe seu recado
         </h1>
-        <form action="https://formspree.io/f/mgvwerny" method="POST">
+        <form action="https://formspree.io/f/mgvwerny" method="POST" className="form">
           <fieldset className="contact-fieldset">
             <div className="input-container">
               <input
